@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 iframe {
     width: 100%;
-    margin-right: auto;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -16,23 +21,13 @@ iframe {
 }
 
 h1 {
-    /* font-family: 'Playfair Display'; */
     font-size: 100px;
-    /* margin-top: 3em; */
-    margin-bottom: .3em;
+    font-weight: 700;
+    transform: skewX(-25deg);
     position: relative;
     top: -50px;
-}
-
-p {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin: 0;
-}
-
-h1,p {
     text-align: center;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    letter-spacing: -5px;
 }
 
 .hide-logo {
@@ -46,26 +41,22 @@ h1,p {
 }
 
 .color-button {
-    display: inline-block;
     padding: 10px 20px;
     background: linear-gradient(to right, transparent 0%, transparent 34%, rgb(159, 22, 22) 34%, rgb(159, 22, 22) 60%, transparent 60%, transparent 100%);
     background-size: 300% 100%;
     transition: background-position 0.3s ease-out;
-    text-decoration: none;
-    color: black;
     cursor: pointer;
     z-index: 10;
     position: absolute;
     bottom: 10vh;
     left:45vw;
     outline: 4px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .color-button:hover {
     background-position: -200% 0;
   }
-
-a {
-    font-size: 18px;
-    font-weight: bold;
-}
