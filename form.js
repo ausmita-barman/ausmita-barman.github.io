@@ -97,7 +97,7 @@ form.addEventListener("submit", async (e) => {
                 // Automatically close the alert after 4 seconds
                 setTimeout(function () {
                     alertBox.style.display = "none";
-                    window.location.href = 'index.html';;
+                    window.location.href = 'index.html';
                 }, 4000);
             }, 1000);
         } else {
