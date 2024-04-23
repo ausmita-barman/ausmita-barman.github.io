@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="quiz-container">
+            <form id="quizForm">
+                <div id="alertBox" class="alert"></div>
+
+                <div id="status">
+                    <span class="question-left">0</span>
+                    <span>/</span>
+                    <span class="question-total"></span>
+                </div>
+
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+
+
+                <div class="question">
+                    <h2>Question 1</h2>
+                    <p>What is your age?</p>
+                    <div class="radio-options">
+                        <input type="radio" id="q1-o1" name="q1" value="18-25">
+                        <label for="q1-o1">18-25</label>
+                        <input type="radio" id="q1-o2" name="q1" value="26-30">
+                        <label for="q1-o2">26-30</label>
+                        <input type="radio" name="q1" id="q1-o3" value="31-35">
+                        <label for="q1-o3">31-35</label>
+                        <input type="radio" name="q1" id="q1-o4" value="36 or older">
+                        <label for="q1-o4">36 or older</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h2>Question 2</h2>
+                    <p>What is your gender?</p>
+                    <div class="radio-options">
+                        <input type="radio" id="q2-o1" name="q2" value="Male">
+                        <label for="q2-o1">Male</label>
+                        <input type="radio" id="q2-o2" name="q2" value="Female">
+                        <label for="q2-o2">Female</label>
+                        <input type="radio" id="q2-o3" name="q2" value="Non-binary">
+                        <label for="q2-o3">Non-binary</label>
+                        <input type="radio" id="q2-o4" name="q2" value="Prefer not to answer">
+                        <label for="q2-o4">Prefer not to answer</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>Question 3</h2>
+                    <p>What is your religious affiliation (if any)?</p>
+                    <div class="radio-options">
+                        <input type="radio" id="q3-o1" name="q3" value="Christianity">
+                        <label for="q3-o1">Christianity</label>
+                        <input type="radio" id="q3-o2" name="q3" value="Islam">
+                        <label for="q3-o2">Islam</label>
+                        <input type="radio" id="q3-o3" name="q3" value="Hinduism">
+                        <label for="q3-o3">Hinduism</label>
+                        <input type="radio" id="q3-o4" name="q3" value="Buddhism">
+                        <label for="q3-o4">Buddhism</label>
+                        <input type="radio" id="q3-o5" name="q3" value="Judaism">
+                        <label for="q3-o5">Judaism</label>
+                        <input type="radio" id="q3-o6" name="q3" value="Atheism">
+                        <label for="q3-o6">Atheism</label>
+                        <input type="radio" id="q3-o7" name="q3" value="Prefer not to answer">
+                        <label for="q3-o7">Prefer not to answer</label>
+                    </div>
+
+                </div>
+                <div class="question">
+                    <h2>Question 4</h2>
+                    <p>What is your ethnicity?</p>
+                    <div class="radio-options">
+                        <input type="radio" id="q4-o1" name="q4" value="Hispanic of any race">
+                        <label for="q4-o1">Hispanic of any race</label>
+                        <input type="radio" id="q4-o2" name="q4" value="American Indian or Alaska Native">
+                        <label for="q4-o2">American Indian or Alaska Native</label>
+                        <input type="radio" id="q4-o3" name="q4" value="Asian">
+                        <label for="q4-o3">Asian</label>
+                        <input type="radio" id="q4-o4" name="q4" value="Black or African American">
+                        <label for="q4-o4">Black or African American</label>
+                        <input type="radio" id="q4-o5" name="q4" value="Native Hawaiian or Other Pacific Islander">
+                        <label for="q4-o5">Native Hawaiian or Other Pacific Islander</label>
+                        <input type="radio" id="q4-o6" name="q4" value="White">
+                        <label for="q4-o6">White</label>
+                        <input type="radio" id="q4-o7" name="q4" value="Two or more races">
+                        <label for="q4-o7">Two or more races</label>
+                        <input type="radio" id="q4-o8" name="q4" value="Race and Ethnicity Unknown">
+                        <label for="q4-o8">Race and Ethnicity Unknown</label>
+                        <input type="radio" id="q4-o9" name="q4" value="Prefer not to answer">
+                        <label for="q4-o9">Prefer not to answer</label>
+                    </div>
+
+                </div>
+                <div class="question">
+                    <h2>Question 5</h2>
+                    <p>Which of these adjectives do you consider to be suitable for this image?</p>
+                    <div class="image-option">
+                        <div class="radio-options-3">
+                            <input type="radio" id="q5-o1" name="q5" value="Oppressed">
+                            <label for="q5-o1">Oppressed</label>
+                            <input type="radio" id="q5-o2" name="q5" value="Comfort">
+                            <label for="q5-o2">Comfort</label>
+                            <input type="radio" id="q5-o3" name="q5" value="Obligated">
+                            <label for="q5-o3">Obligated</label>
+                            <input type="radio" id="q5-o4" name="q5" value="Joyful">
+                            <label for="q5-o4">Joyful</label>
+                        </div>
+                        <img src="fde-1.jpg" alt="picture of women wearing hijab">
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>Question 6</h2>
+                    <p>Based on what those adjectives, what would you consider fits more with the reason why you chose it?</p>
+                    <div class="radio-options-2">
+                        <input type="radio" id="q6-o1" name="q6" value="Obligated by the religion and society">
+                        <label for="q6-o1">Normally this women are obligated to wear it by their religion or society</label>
+                        <input type="radio" id="q6-o2" name="q6" value="Obligated by the religion and society">
+                        <label for="q6-o2">Normally this women are wearing religious attire by their choices</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h2>Question 7</h2>
+                    <p>Which of these adjectives do you consider to be suitable for this image?</p>
+                    <div class="image-option">
+                        <div class="radio-options-3">
+                            <input type="radio" id="q7-o1" name="q7" value="Oppressed">
+                            <label for="q7-o1">Oppressed</label>
+                            <input type="radio" id="q7-o2" name="q7" value="Comfort">
+                            <label for="q7-o2">Comfort</label>
+                            <input type="radio" id="q7-o3" name="q7" value="Obligated">
+                            <label for="q7-o3">Obligated</label>
+                            <input type="radio" id="q7-o4" name="q7" value="Joyful">
+                            <label for="q7-o4">Joyful</label>
+                        </div>
+                        <img src="fde-2.jpg" alt="picture of nun">
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>Question 8</h2>
+                    <p>Based on what those adjectives, what would you consider fits more with the reason why you chose it?</p>
+                    <div class="radio-options-2">
+                        <input type="radio" id="q8-o1" name="q8" value="Obligated by the religion and society">
+                        <label for="q8-o1">Normally this women are obligated to wear it by their religion or society</label>
+                        <input type="radio" id="q8-o2" name="q8" value="Obligated by the religion and society">
+                        <label for="q8-o2">Normally this women are wearing religious attire by their choices</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>Question 9</h2>
+                    <p>What do you believe that the perception towards Muslim women wearing religious attire is influenced by?</p>
+                    <div class="radio-options">
+                        <input type="radio" id="q9-o1" name="q9" value="Religious Bias">
+                        <label for="q9-o1">Religious Bias</label>
+                        <input type="radio" id="q9-o2" name="q9" value="Social Bias">
+                        <label for="q9-o2">Social Bias</label>
+                        <input type="radio" id="q9-o3" name="q9" value="Stereotype">
+                        <label for="q9-o3">Stereotype</label>
+                        <input type="radio" id="q9-o4" name="q9" value="Based on my own knowledge">
+                        <label for="q9-o4">Based on my own knowledge</label>
+                    </div>
+                </div>
+                <button type="button" onclick="prevQuestion()" class="previous-question">Previous</button>
+                <button type="button" onclick="nextQuestion()" class="next-question">Next</button>
+                <button type="submit" class="submit" disabled>Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="form.js"></script>
+</body>
+
+</html>
