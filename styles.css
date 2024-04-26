@@ -227,6 +227,78 @@ img {
 }
 
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .quiz-container, .centered-div {
+        width: 70%;
+        text-align: center;
+    }
+
+    .radio-options {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        width: 100%;
+    }
+
+    .radio-options-3 {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    .question input[type="radio"] + label {
+        width: 100px;
+        /* height: 50%; */
+        font-size: 12px;
+    }
+    .radio-options-2 input[type="radio"] + label {
+        width: 100%;
+        /* height: 50%; */
+        font-size: 12px;
+    }
+
+    .radio-options-3 input[type="radio"] + label {
+        width: 70%;
+    }
+
+    .next-question, .previous-question {
+        bottom: 10%;
+    }
+    
+    .submit {
+        bottom: 0;
+    }
+    
+    img {
+        width: 40%;
+        height: 40%;
+    }
+    .image-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .last-item {
+        order: -1;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    .quiz-container, .centered-div {
+        width: 90%;
+    }
+
+    .question input[type="radio"] + label {
+        width: 100%;
+    }
+} */
+
+
+
 /* .spinner {
     display: block;
     position: absolute;
