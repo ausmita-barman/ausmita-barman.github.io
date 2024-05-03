@@ -43,13 +43,13 @@ function prevQuestion() {
 
 
 // Add event listeners to radio buttons
-radioBtn.forEach(btn => {
-    btn.addEventListener('change', () => {
-        setTimeout(() => {
-            nextQuestion(); // Move to the next question
-        }, 200); // delay
-    });
-});
+// radioBtn.forEach(btn => {
+//     btn.addEventListener('change', () => {
+//         setTimeout(() => {
+//             nextQuestion(); 
+//         }, 200); 
+//     });
+// });
 
 
 quizContainer.addEventListener("click", submitDisabled);
